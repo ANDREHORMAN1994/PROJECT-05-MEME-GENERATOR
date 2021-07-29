@@ -1,4 +1,4 @@
-# PROJETO MEME GENERATOR 🥸
+# PROJETO MEME GENERATOR 😎
 
 - Neste projeto, o foco foi desenvolver minhas habilidades em js utilizando eventos diferentes nos elementos da página.
 
