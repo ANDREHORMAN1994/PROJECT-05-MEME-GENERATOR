@@ -9,17 +9,43 @@
 
   .fileSection {
     margin: 3px auto;
-    width: max-content;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* background-color: #f2f2f2; */
+    padding: 10px;
   }
 
   .filesItems {
-    width: max-content;
+    /* width: 100%; */
     /* background-color: blue; */
+    /* padding: 10px; */
+  }
+
+  .fileSection strong {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+
+  #text-input {
+    width: 100%;
+    padding: 10px;
+    /* background-color: red; */
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  #label-meme-insert {
+    background-color: white;
+    border: 1px solid black;
+    color: gray;
+    padding: 10px;
+    width: 100%;
+    margin: 0 10px;
   }
 }
 
@@ -89,7 +115,7 @@
   }
 
   .filesItems {
-    font-size: 10px;
+    /* font-size: 10px; */
   }
 
   .main-container {
@@ -160,5 +186,14 @@
 
   .footer-container p {
     font-size: 10px;
+  }
+
+  #label-meme-insert {
+    background-color: white;
+    border: 1px solid black;
+    color: gray;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0 10px;
   }
 }
