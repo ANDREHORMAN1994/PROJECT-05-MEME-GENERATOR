@@ -18,7 +18,8 @@
 **[ABRIR PROJETO NO NAVEGADOR](https://andrehorman1994.github.io/PROJECT-05-MEME-GENERATOR/)**
 
 </span>
-<br></br>
+
+---
 
 # TECNOLOGIAS UTILIZADAS 💻
 
@@ -26,6 +27,8 @@
 - **CSS**
 - **JAVASCRIPT**
   <br></br>
+
+---
 
 # INSTRUÇÕES IMPORTANTES 📝
 
