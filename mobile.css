@@ -196,4 +196,11 @@
     width: 100%;
     margin: 0 10px;
   }
+
+  .borders {
+    /* background-color: red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
 }
