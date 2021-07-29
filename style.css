@@ -1,57 +1,206 @@
+@font-face {
+  src: url(./fonts/memes/Memes.ttf);
+  font-family: meme;
+}
+
+@font-face {
+  src: url(./fonts/brighly_crush/Brightly\ Crush\ Shine.otf);
+  font-family: titulo;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  max-height: max-content;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  max-height: max-content;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-image: url(./imgs/fundo.jpg);
+  background-size: 100% 100%;
+  font-family: meme, Arial, Helvetica, sans-serif;
+}
+
 .container-title {
-  background-color: brown;
-  padding: 20px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.head-title-container {
+  padding: 10px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  width: 80%;
   text-align: center;
 }
 
+.head-title-subcontainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex;
+  align-items: baseline;
+  width: max-content;
+  /* background-color: blue; */
+}
+
 .title {
-  color: white;
+  color: #a0ff98;
+  font-size: 50px;
+  font-family: titulo, Arial, Helvetica, sans-serif;
+  margin: 0 20px;
+  padding: 0;
+  /* width: 100%; */
+  /* background-color: blue; */
+}
+
+.meme-span {
+  color: #e0ca3c;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 20px;
+  font-family: titulo, Arial, Helvetica, sans-serif;
+  /* width: 100%; */
+  /* background-color: blue; */
+}
+
+.head-p-container {
+  background-color: #e0ca3c;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-meme {
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: titulo, Arial, Helvetica, sans-serif;
+  padding: 5px 0;
+}
+
+.p-meme-span1 {
+  font-family: meme, Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #a0ff98;
+  font-weight: 500;
+  width: max-content;
+}
+
+.p-meme-span2 {
+  font-family: meme, Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #e0ca3c;
+  font-weight: 500;
+  width: max-content;
+}
+
+.main-container {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .files {
   text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  /* margin: 10px; */
+  /* background-color: black; */
 }
 
 .fileSection {
-  background-color: brown;
-  display: inline-block;
-  margin: 5px;
-  padding: 10px;
-  width: 400px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 20px;
+  /* background-color: red; */
 }
 
 .filesItems {
-  display: inline-block;
-  font-size: 15px;
-  margin: auto;
+  font-size: 16px;
+  color: black;
+  margin: 0 5px;
 }
 
 .text-input {
   border: 1px solid black;
-  line-height: 10px;
-  padding: 5px 10px;
-  width: 200px;
+  padding: 5px;
+  text-align: center;
+  color: black;
+  background-color: white;
 }
 
-.meme-insert {
-  margin: auto;
-  padding: 5px 0;
-  width: 250px;
+.button-move-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.p-arrow-container p {
+  font-size: 15px;
+  color: #e0ca3c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.arrows {
+  width: 50px;
+  cursor: pointer;
+}
+
+.arrows:hover {
+  width: 45px;
 }
 
 .meme-image-container {
-  background-color: white;
-  border: 1px solid black;
+  background-color: black;
+  box-shadow: 0 0 20px black;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin: 20px auto;
+  padding: 0;
   height: 300px;
-  margin: auto;
-  position: relative;
-  top: 20px;
   width: 400px;
+  position: relative;
 }
 
 .meme-image {
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+  margin: auto;
 }
 
 .meme-text {
@@ -64,41 +213,133 @@
   text-shadow: 5px 5px 5px black;
 }
 
+.options-meme-container {
+  width: max-content;
+  margin: 0px auto;
+  /* background-color: red; */
+}
+
+.meme-subcontainer {
+  margin: 20px auto;
+  /* background-color: blue; */
+}
+
 .borders {
-  margin: 40px;
   text-align: center;
+  margin: auto;
+  width: max-content;
+  /* background-color: red; */
 }
 
 .button {
-  border: 1px solid black;
+  border-radius: 100px;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+}
+
+.button:hover {
+  width: 90px;
 }
 
 .fire {
   background-color: red;
+  border: 2px dashed white;
 }
 
 .water {
   background-color: blue;
+  border: 2px dashed white;
 }
 
 .earth {
   background-color: green;
+  border: 2px dashed white;
 }
 
-.title2 {
-  color: black;
-  text-align: center;
+.fire:hover {
+  border: 2px solid red;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: red;
+}
+
+.water:hover {
+  border: 2px solid blue;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: blue;
+}
+
+.earth:hover {
+  border: 2px solid green;
+  background-color: rgb(0, 0, 0);
+  font-size: 14px;
+  color: green;
 }
 
 .miniature {
   text-align: center;
 }
 
+.p-miniature {
+  font-size: 15px;
+  color: #e0ca3c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 500px;
+}
+
 .miniatureImg {
+  margin: 10px;
   display: inline-block;
   height: 80px;
-  margin: 10px;
-  width: 100px;
+  width: 90px;
+  border-radius: 50%;
+  border: 6px double white;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.miniatureImg:hover {
+  border: 3px solid #e0ca3c;
+  height: 70px;
+  width: 80px;
+  background-color: black;
+  opacity: 1;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 0 100%;
+  /* background-color: black; */
+}
+
+.footer-container h2 {
+  /* background-color: #f2f2f2; */
+  color: #e0ca3c;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 10px 0 0;
+}
+
+.footer-container p {
+  /* background-color: #7d0000; */
+  color: white;
+  font-weight: 100;
+  font-size: 15px;
+  width: 100%;
+  padding: 0 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
